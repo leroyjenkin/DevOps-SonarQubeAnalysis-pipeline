@@ -15,7 +15,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/jaiswaladi246/Boardgame.git'
             }
         }
-        stage('Testing') {
+        stage('Test') {
             steps {
                 sh "mvn test"
             }
